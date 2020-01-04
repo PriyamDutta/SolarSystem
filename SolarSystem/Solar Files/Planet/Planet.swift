@@ -23,7 +23,7 @@ final public class Planet: UIControl {
     private var orbitPath: UIBezierPath!
     private var isUpperHem = false
     
-    weak var delegate: SolarViewProtocol?
+    weak var delegate: SolarViewDelegate?
 
     override init(frame: CGRect) {
         super.init(frame: frame)

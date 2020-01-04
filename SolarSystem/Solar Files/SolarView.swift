@@ -11,7 +11,7 @@ final public class SolarView: UIView {
     
     public var orbits: [UIBezierPath] = []
     public var planets: [Planet] = []
-    public weak var delegate: SolarViewProtocol?
+    public weak var delegate: SolarViewDelegate?
     
     private var didOrbitCreated = false
     private var configuration: SolarConfiguration!

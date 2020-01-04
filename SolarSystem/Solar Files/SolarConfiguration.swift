@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public protocol SolarViewProtocol: AnyObject {
+public protocol SolarViewDelegate: AnyObject {
     func didBeginTouchPlanet(planet: Planet)
     func didMovingPlanet(planet: Planet)
     func didFinishTouchPlanet(planet: Planet)

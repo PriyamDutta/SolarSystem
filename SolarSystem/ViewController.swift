@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, SolarViewProtocol {
+class ViewController: UIViewController, SolarViewDelegate {
     
     private var solarSystem: SolarView!
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ class ViewController: UIViewController, SolarViewProtocol {
         self.view.addSubview(solarSystem)
     }
     
-    /// MARK: `SolarViewProtocol` functions
+    /// MARK: `SolarViewDelegate` functions
     func didBeginTouchPlanet(planet: Planet) {
         print("Did touch: \(planet.tag)")
     }
